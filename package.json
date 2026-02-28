@@ -1,0 +1,14 @@
+{
+  "name": "fintech-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "FinPay - A fintech payment platform with web and mobile clients",
+  "scripts": {
+    "web": "yarn workspace @finpay/web-app start",
+    "mobile": "yarn workspace @finpay/mobile-app start",
+    "test": "yarn workspaces run test"
+  }
+}
